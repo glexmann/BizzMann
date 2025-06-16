@@ -1,0 +1,93 @@
+*		{margin:0; padding:0; }
+html	{ }
+body	{background-image:url(''); background-color:#181840; color:white; text-align:center; text-decoration:none; width:100%; height:100%; margin:auto; font:normal 1em verdana, Arial, Helvetica, sans-serif; padding:0px; list-style-image:url(''); font-style:; font-weight:; letter-spacing:; line-height:; }   /* font-size:6.5vw; ); */
+.wrapper { height: 100%;  width: 100%;  left:0;  right: 0;  top: 0;  bottom: 0;  position: absolute;background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);background-size: 1800% 1800%; -webkit-animation: rainbow 18s ease infinite;-z-animation: rainbow 18s ease infinite;-o-animation: rainbow 18s ease infinite;  animation: rainbow 18s ease infinite;} @-webkit-keyframes rainbow { 0%{background-position:0% 82%}    50%{background-position:100% 19%}    100%{background-position:0% 82%}} @-moz-keyframes rainbow {  0%{background-position:0% 82%}    50%{background-position:100% 19%}    100%{background-position:0% 82%}}
+@-o-keyframes rainbow { 0%{background-position:0% 82%} 50%{background-position:100% 19%} 100%{background-position:0% 82%}}
+@keyframes rainbow { 0%{background-position:0% 82%} 50%{background-position:100% 19%} 100%{background-position:0% 82%}}
+#wrapper1		{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		grid-auto-rows:minmax(50px, auto);
+		grid-gap:0.5em; /* 1.0em */
+		max-width:98%;
+		margin:0 auto;
+		margin-top:16px;
+		padding-top:2px;
+		border:solid 1px #181840;
+		border-radius:10px;
+		background-image: url('../image/GlexMann/BG2.gif'); background-repeat: repeat;
+		background-color:#E1E0F3;
+		grid-template-areas:
+			"header nav nav"
+			"main main aside"; }
+
+@media screen and (max-width:760px)	{
+#wrapper1		{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		grid-auto-rows:minmax(50px, auto);
+		grid-gap:1.0em; /* 0.5em */
+		max-width:760px;
+		margin:0 auto;
+		margin-top:10px;
+		padding-top:2px;
+		border:solid 1px #181840;
+		border-radius:10px;
+		background-color:#E1E0F3;
+		grid-template-areas:
+			"header header header"
+			"nav nav nav"
+			"main main main"
+			"aside aside aside"; }		}
+
+#wrapper1 > *{padding:10px; }
+header		{grid-area:header; } /* or whatever name */
+nav			{grid-area:nav; }
+main			{grid-area:main; background-color:; border:solid 0px #8882D0; margin:0 5px 5px; border-radius:10px; }
+aside			{grid-area:aside; background-color:; border:solid 0px #8882D0; margin:0 5px 5px; border-radius:10px; }
+				/* background-color:#CFCDEC;  */
+
+details		{grid-area:details; background:green; border-radius:20px; }
+article			{grid-area:article; background:blue; border-radius:20px;}
+section		{grid-area:section; background:red; border-radius:20px;}
+footer		{grid-area:footer; background:purple !important; border-radius:20px; }
+
+.catbox 	{width:auto; margin:auto; margin-bottom:30px; }
+.cattitle 	{height:20px; margin:auto; font-weight:bold; width:300px; border:solid 1px #181840; border-bottom:0px; border-radius:20px 20px 0 0; color:silver; background-color:#181840; margin-bottom:-1px;  }
+.cattitle:hover	{color:#181840; background-color:silver; } 	
+.tab	{padding:0 10px; height:20px; margin:0 auto; }/* Tabs BG */
+.tab li {width:14.285%; float:left; padding:0; margin:0; list-style-type:none; background-color:; }/* single tab */
+.tab a  {font-size:80%; display:block; padding:1px 2px; text-decoration:none; border:1px solid #181840; border-bottom:0px; height:16px; margin:0 2px; position:relative; top:1px; outline:0; border-radius:15px 15px 0px 0px; }/* link inside the tab. uses a background image */
+.tab-pane div {width:auto; max-width:; margin:auto; display:none; border:1px solid #181840; padding:3px 10px; border-radius:10px;  }/* tab pane */
+/*alternate colors: skin2 : */
+.skin2 a 			{background-color:#8882D0; font-weight:bold; color:white !important; }/*Tab */
+.skin2 a:hover 	{background-color:#181840; color:silver !important; }
+.skin2 a.current	{background-color:#E1E0F3;; border-bottom:1px solid #E1E0F3; color:#181840 !important; }
+div.skin2 div		{min-height:50px; color:#383870; font-size:80%; background-color:#E1E0F3; } /* tab pane */
+div.skin2 div img{max-height:24px; min-height:24px; border:solid 1px #8882D0; padding:1px; } /* LogoIcon in tab pane */
+div.skin2 div a:link 	{text-decoration:none; color:#181840 !important; background-color:#E1E0F3 !important; font-weight:normal !important; }
+div.skin2 div a:hover 	{text-decoration:underline; color:blue !important;  }
+div.skin2 div a:active	{color:red !important;  }
+div.skin2 div a:visit	ed	{color:green;  }
+
+.catbox 	{width:auto; margin:auto; margin-bottom:30px; }
+.cattitle 	{height:20px; margin:auto; font-weight:bold; width:300px; border:solid 1px #181840; border-bottom:0px; border-radius:20px 20px 0 0; color:silver; background-color:#181840; margin-bottom:-1px;  }
+.cattitle:hover	{color:#181840; background-color:silver; } 	
+
+.cattitle { cursor: move; }
+
+.reset-btn {
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  background: #181840;
+  color: #E1E0F3;
+  border: 2px solid #8882D0;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background: #8882D0;
+  color: #181840;
+}

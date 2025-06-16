@@ -1,0 +1,387 @@
+/*	CSS Document:
+	**File Name: style.css	(CSS for full Site: BizzMann.Com)
+	**Website: www.BizzMann.Com
+	**Copyright © 2016-2020 BizzMann.Com. All Rights Reserved.
+	**Alec Johnson, Glexmann Networks Limited, Hong Kong. E-Mail: GlexMann@GMail.Com
+	**Reproduction in whole or in part in any form or medium without express written permission of BizzMann.Com is prohibited.
+/* === *** === *** === *** === *** === *** === */
+/* === *** === *** === *** === *** === *** === */
+
+
+/* == 'CSS' STARTS HERE == */
+*		{margin:0; padding:0; }
+html	{ }
+body	{background-image:url('../image/ImageName.jpg'); background-color:#181840; color:white; text-align:center; text-decoration:none; width:100%; height:100%; margin:auto; font:normal 1em verdana, Arial, Helvetica, sans-serif; padding:0px; list-style-image:url('../image/GlexMannNewWindow9x9.gif'); font-style:; font-weight:; letter-spacing:; line-height:; }   /* font-size:6.5vw; ); */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Fixed Social Icons' STARTS HERE == */
+#twitter		{border:0; position:fixed; top:290px; right:0; }
+#facebook	{border:0; position:fixed; top:404px; right:0; }
+#linkedin	{border:0; position:fixed; top:520px; right:0; }
+/* == 'Fixed Social Icons' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'TopTicker' STARTS HERE == */
+#toptickerbox 			{width:98%; margin:10px auto 0px; padding:0px; border:solid 1px silver; border-radius:8px; box-shadow:0 0 10px 2px silver; transition:all 1.2s ease-in-out; background-image:url('GlexMannBGSnow.gif'); }
+#toptickerbox:hover {box-shadow:0 0 20px 5px white; }
+#toptickertext			{width:100%; height:28px; margin-top:-7px; font-size:80%; color:silver; }
+#toptickertext:hover	{color:white; }
+#toptickertext a:link	{text-decoration:none; color:gold; font-size:75%; font-weight:bold; margin-right:25px; margin-left:1px; border:solid 1px gold; padding:1px 5px; border-radius:12px; }
+#toptickertext a:hover	{background-color:gold; color:#181840; border-color:#181840;  box-shadow:0 0 12px 1px white; }
+#toptickertext a:active	{color:red;}
+/* == 'TopTicker' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Social Icons Box' STARTS HERE == */
+#iconblock	{width:98%; max-width:1380px; height:auto; margin:4px auto; padding:0; background-color:;}/*margin-top:35px; if fixed*/
+#iconbox	{background-color:#383870; width:auto; height:auto; margin:auto; padding:5px 2px 0 2px; text-align:center; overflow:hidden; border:solid 1px #8882D0; border-radius:10px; }
+#iconbox img	{width:24px; height:24px; margin-bottom:2px; padding:1px; border:solid 1px #fff; border-radius:5px; box-shadow:0 0 3px 1px silver; }
+#iconbox img:hover {border:solid 1px red; box-shadow:0 0 8px 3px red; }
+#desA	{background-color:#383870; width:20%; min-width:200px; height:13px; margin:auto; padding:0 3px; text-align:center; font-size:75%; letter-spacing:2px; color:silver; margin-top:2px; border:solid 1px #8882D0; border-width:1px 1px 0 1px; font-weight:bold; border-top-left-radius:10px; border-top-right-radius:10px; -moz-border-top-left-radius:10px; -moz-border-top-right-radius:10px;/*For Mozilla*/  -webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px;/*ForSafari*/ }
+#desA:hover	{color:white;}
+/* == 'Social Icons Box' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'DHTMLToolTips CSS' STARTS HERE == */
+#dhtmltooltip	{position:absolute; max-width:300px; width:auto; border:1px solid gold; background-color:#181840; visibility:hidden; z-index:100; color:gold; font-size:90%; vertical-align:top; border-radius:10px; text-align:justify; padding:6px 12px; }
+	/*Below line should be last within this CSS to show shadow.
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=white,direction=145); */
+/* == 'DHTMLToolTips CSS' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Wrapper1' STARTS HERE == */
+/* For Laptop Grid : --> */
+#wrapper1		{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		grid-auto-rows:minmax(50px, auto);
+		grid-gap:0.5em; /* 1.0em */
+		max-width:98%;
+		margin:0 auto;
+		margin-top:10px;
+		padding-top:2px;
+		border:solid 1px #8882D0;
+		border-radius:10px;
+		background-color:#383870;
+		grid-template-areas:
+			"header nav nav"
+			"main main main"
+			"article article article"; }
+			/*
+			"details details details"
+			"aside aside aside"
+			"section section section"
+			"footer footer footer"
+			*/
+.nested2	{
+			display:grid;
+			grid-template-columns:repeat(3, 1fr);
+			grid-auto-rows:minmax(50px, auto);
+			grid-gap:15px; }
+.nested2 > div {background-color:#383870;  border:solid 0px #8882D0; color:silver; border-radius:10px;}
+
+/* === *** === *** === *** === *** === *** === */
+/* For Mobile Grid : --> */
+@media screen and (max-width:760px)	{
+#wrapper1		{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+		grid-auto-rows:minmax(50px, auto);
+		grid-gap:1.0em; /* 0.5em */
+		max-width:760px;
+		margin:0 auto;
+		margin-top:10px;
+		padding-top:2px;
+		border:solid 1px #8882D0;
+		border-radius:10px;
+		background-color:#383870;
+		grid-template-areas:
+			"header header header"
+			"nav nav nav"
+			"main main main"
+			"article article article"; }
+			/*
+			"details details details"
+			"aside aside aside"
+			"section section section"
+			"footer footer footer"
+			*/
+.nested2	{
+			display:grid;
+			grid-template-columns:1fr;
+			grid-auto-rows:minmax(50px, auto);
+			grid-gap:10px; }
+			}
+/* === *** === *** === *** === *** === *** === */
+
+/* === *** === *** === *** === *** === *** === */
+#wrapper1 > *{padding:10px; }
+header		{grid-area:header; } /* or whatever name */
+nav			{grid-area:nav; }
+main			{grid-area:main; background-color:#181840; border:solid 1px #8882D0; margin:0 5px 5px; border-radius:10px; }
+article		{grid-area:article; background-color:#181840; border:solid 1px #8882D0; margin:0 5px 5px; border-radius:10px; }
+
+/* === *** === *** === *** === *** === *** === */
+/* The Followings are not activated ::*/
+details		{grid-area:details; background:green; border-radius:20px; }
+aside			{grid-area:aside; background:blue; border-radius:20px;}
+section		{grid-area:section; background:red; border-radius:20px;}
+footer		{grid-area:footer; background:yellow !important; border-radius:20px; }
+/* === *** === *** === *** === *** === *** === */
+/* @media(max-width:600px)	{
+	#main		{width:100%; float:none; }
+	#sidebar	{width:100%; float:none; }
+	}
+*/
+/* === *** === *** === *** === *** === *** === */
+
+/* == 'Wrapper1' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Header' STARTS HERE == */
+#header		{font-family:"Book Antiqua", Cambria, Constantia; transition:all 1.0s ease-in-out; background-image:url('GlexMannBGSnow.gif'); margin: 0 auto; padding:0px; border-radius:8px; border:solid 1px #8882D0; }
+#header:hover	{ }
+#header h1	{font-size:4.5vw; text-shadow:4px 4px 3px silver; transition:all 1.2s ease-in-out; padding:0 8px;  } /* font-size:4.5em */
+#header h1:hover	{text-shadow:4px 4px 20px red; }
+#header h2	{font-size:1.8vw; font-style:italic; color:silver; margin-top:-5px; padding-bottom:2px; }/* font-size:1.5em */
+/* Text Color Transformation STARTS: */
+#header h1	{-webkit-animation:mymove 12s infinite; /* Chrome, Safari, Opera */ animation: mymove 12s infinite; }
+				@-webkit-keyframes mymove		{50% {color:blue;} }		/* Chrome, Safari, Opera */
+				@keyframes mymove				{50% {color:blue;} }		/* Standard syntax */
+/* Text Color Transformation ENDS */
+/* == 'Header' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Nav/Menu' STARTS HERE == */
+#menu		{width:auto; max-width:980px; margin:0px auto; border:solid 1px #8882D0;; border-radius:0px 0px 10px 10px; min-height:100px; }
+.tablink		{background-color:#181840; color:silver; font-weight:bold; float:left; border:solid 0px #8882D0;; outline:none; cursor:pointer; padding:2px; width:14.2857%; letter-spacing:0.07em; font-size:90%; }
+.tablink:hover  {background-color:silver; color:#181840; }
+.tabcontent {height:auto; min-height:80px; display:none; padding:10px 5px; border-radius:0px 0px 10px 10px; }
+.tabcontent h3	{font-size:95%; color:white; text-decoration:none; }
+.tabcontent h3:hover	{color:orange; text-decoration:underline; }
+.tabcontent a		{text-decoration:none; color:silver; font-size:92%; }
+.tabcontent a:hover	{text-decoration:underline; color:white; }
+#One		{background-color:darkslateblue; }
+#Two		{background-color:blueviolet; }
+#Three		{background-color:darkgreen; }
+#Four		{background-color:indigo; }
+#Five		{background-color:crimson; }
+#Six			{background-color:blue; }
+#Seven		{background-color:purple; }
+/* == 'Nav/Menu' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Accordian' STARTS HERE == */
+/* root element for each accordion */
+.accordion		{width:auto; margin:auto; }/* Accordian box */
+.accordion h2	{background:#31f url(h30.png); padding:4px; border:1px solid #8882D0; border-bottom:none; font-size:90%; cursor:pointer; color:silver; border-radius:10px 10px 0 0; }/* header title */
+.accordion h2.current	{cursor:default; background-color:#88f; color:#181840; border-color:white; }/* currently active header */
+.accordion div.pane 	{background:#31f url(h300.png) 0 0; display:none; height:auto; padding:5px; color:white; font-size:85%; border:solid 1px white; border-top:none; border-radius:0 0 10px 10px; }/* currently active pane */
+.accordion div.pane h3	{font-weight:bold; font-size:100%; color:orange; }/* a title inside pane */
+/* == 'Accordian' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'MultiTab Category' STARTS HERE == */
+#catbox 	{width:98%; max-width:1300px; margin:auto; margin-bottom:10px; }
+#cattitle 	{height:20px; margin:auto; font-weight:bold; width:300px; border:solid 1px orange; border-bottom:0px; border-radius:10px 10px 0 0; color:orange; }
+#cattitle:hover	{color:white; background-color:; } 	
+.tab	{padding:0 10px; height:20px; margin:0 auto; }/* Tabs BG */
+.tab li {width:14.285%; float:left; padding:0; margin:0; list-style-type:none; background-color:; }/* single tab */
+.tab a  {font-size:80%; display:block; padding:1px 2px; text-decoration:none; border:1px solid orange; border-bottom:0px; height:16px; margin:0 2px; position:relative; top:1px; outline:0; border-radius:15px 15px 0px 0px; }/* link inside the tab. uses a background image */
+.tab-pane div {width:98%; max-width:1300px; margin:auto; display:none; border:1px solid orange; padding:3px 10px; border-radius:10px;  }/* tab pane */
+/*alternate colors: skin2 : */
+.skin2 a 			{background-color:orange; font-weight:bold; color:#181840 !important; }/*Tab */
+.skin2 a:hover 	{background-color:#181840; color:orange !important; }
+.skin2 a.current	{background-color:#383870; border-bottom:1px solid #383870; color:orange !important; }
+div.skin2 div		{min-height:50px; color:silver; font-size:85%; background-color:#383870; } /* tab pane */
+div.skin2 div a:link 	{text-decoration:none; color:orange !important; background-color:#383870 !important; font-weight:normal !important;  }
+div.skin2 div a:hover 	{text-decoration:underline; color:white !important;  }
+div.skin2 div a:active	{color:red !important;  }
+div.skin2 div a:visit	ed	{color:darkslateblue;  }
+/* == 'MultiTab Category' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Contact' STARTS HERE == */
+.contact		{background-color:#8882D0; width:96%; height:auto; margin:25px auto; padding:5px; border:solid 1px silver; border-radius:10px; box-shadow:0 0 10px 2px silver; overflow:hidden; transition:all 1.2s ease-in-out; }
+.contact:hover	{background-color:#383870; }
+.contact img	{margin:0 10px; }
+/* == 'Contact' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Terms' STARTS HERE == */
+.terms	{background-color:#8882D0; width:96%; height:auto; margin:auto; margin-bottom:25px; padding:5px; color:#383870; border:solid 1px silver; border-radius:10px; box-shadow:0 0 10px 2px silver; line-height:1.1em; overflow:hidden; transition:all 1.2s ease-in-out; font-size:80%; }
+.terms:hover 		{background-color:#383870; color:silver; }
+.terms a	{text-decoration:none; color:#181840; font-size:95%; font-weight:bold; }
+.terms a:hover	{color:white; }
+/
+/* == 'Terms' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'ZZZ' STARTS HERE == */
+#class		{  }
+/* == 'ZZZ' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'ZZZ' STARTS HERE == */
+#class		{  }
+/* == 'ZZZ' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'ZZZ' STARTS HERE == */
+#class		{  }
+/* == 'ZZZ' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* === *** === *** === *** === *** === *** === */
+/* === *** === *** === *** === *** === *** === */
+/* === *** === *** === *** === *** === *** === */
+/* === *** === *** === *** === *** === *** === */
+
+
+
+/* === *** === *** === *** === *** === *** === */
+/* == 'Social Icon Position' STARTS HERE == */
+img.bebo	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) 0px 0; }
+img.A002	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -26px 0; }
+img.hi5	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -52px 0; }
+img.myspace	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -78px 0; }
+img.A005	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -104px 0; }
+img.tagged	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -130px 0; }
+img.buzznet	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -156px 0; }
+img.facebook	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -182px 0; }
+img.imvu	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -208px 0; }
+img.multiply	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -234px 0; }
+img.A011	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -260px 0; }
+img.blackplanet	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -286px 0; }
+img.microsoft	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -312px 0; }
+img.livejournal	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -338px 0; }
+img.lifestream	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -364px 0; }
+img.blogger	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -390px 0; }
+img.disqus	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -416px 0; }
+img.googlebuzz	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -442px 0; }
+img.posterous	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -468px 0; }
+img.twitter	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -494px 0; }
+img.wordpress	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -520px 0; }
+img.xanga	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -546px 0; }
+img.tumblr	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -572px 0; }
+img.A024	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -598px 0; }
+img.photobucket	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -624px 0; }
+img.picasa	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -650px 0; }
+img.A027	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -676px 0; }
+img.flickr	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -702px 0; }
+img.gravatar	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -728px 0; }
+img.picturetrail	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -754px 0; }
+img.devianart	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -780px 0; }
+img.fotolog	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -806px 0; }
+img.A033	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -832px 0; }
+img.A034	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -858px 0; }
+img.behance	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -884px 0; }
+img.smugmug	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -910px 0; }
+img.jango	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -936px 0; }
+img.pandora	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -962px 0; }
+img.ilike	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -988px 0; }
+img.lyrics	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1014px 0; }
+img.lastfm	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1040px 0; }
+img.soundcloud	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1066px 0; }
+img.A043	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1092px 0; }
+img.mtv	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1118px 0; }
+img.flixter	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1144px 0; }
+img.vimeo	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1170px 0; }
+img.dailymotion	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1196px 0; }
+img.A048	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1222px 0; }
+img.justintv	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1248px 0; }
+img.metacafe	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1274px 0; }
+img.ustreamtv	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1300px 0; }
+img.veoh	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1326px 0; }
+img.youtube	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1352px 0; }
+img.break	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1378px 0; }
+img.amazon	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1404px 0; }
+img.target	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1430px 0; }
+img.ebay	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1456px 0; }
+img.etsy	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1482px 0; }
+img.zazzle	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1508px 0; }
+img.epinions	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1534px 0; }
+img.kaboodle	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1560px 0; }
+img.thisnext	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1586px 0; }
+img.foursquare	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1612px 0; }
+img.stumbleupon	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1638px 0; }
+img.A065	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1664px 0; }
+img.citysearch	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1690px 0; }
+img.delicious	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1716px 0; }
+img.digg	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1742px 0; }
+img.formspring	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1768px 0; }
+img.tripadvisor	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1794px 0; }
+img.zillow	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1820px 0; }
+img.menuism	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1846px 0; }
+img.topix	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1872px 0; }
+img.match	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1898px 0; }
+img.okcupid	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1924px 0; }
+img.plentyoffish	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1950px 0; }
+img.A077	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -1976px 0; }
+img.github	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2002px 0; }
+img.sourceforge	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2028px 0; }
+img.ign	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2054px 0; }
+img.A081	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2080px 0; }
+img.answers	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2106px 0; }
+img.googleplus	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2132px 0; }
+img.pinterest	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2158px 0; }
+img.cnnireport	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2184px 0; }
+img.cafemom	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2210px 0; }
+img.reddit	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2236px 0; }
+img.eventful	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2262px 0; }
+img.kongregate	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2288px 0; }
+img.A090	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2314px 0; }
+img.A091	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2340px 0; }
+img.A092	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2366px 0; }
+img.instagram	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2392px 0; }
+img.typepad	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2418px 0; }
+img.A095	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2444px 0; }
+img.A096	{width:26px; height:26px; background:url(SocialIcons26x26-96.png) -2470px 0; }
+/* == 'Social Icon Position' ENDS HERE == */
+/* === *** === *** === *** === *** === *** === */

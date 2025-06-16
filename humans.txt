@@ -1,0 +1,40 @@
+# humans.txt for http://www.MidasTouch.Com
+# Copyright &copy; 2017-2025 MidasTouch.Com, All Rights Reserved.
+# Alec Johnson, Glexmann Networks Limited, Hong Kong.
+# Comments to: GlexMann@GMail.Com
+# Reproduction in whole or in part in any form or medium without express written permission of MidasTouch.Com is prohibited.
+=====================================================
+<meta charset="utf-8">
+@charset "UTF-8";
+=====================================================
+/* ABOUT */
+"MidasTouch.Com" is a Portal for ... and related News & Resources.
+
+/* TEAM */
+Site Author: Alec Johnson
+Site: http://www.MidasTouch.Com
+Contact Us: Glexmann@GMail.Com
+Twitter: @DasDomains
+Facebook: DasDomains
+LinkedIn: DasDomains
+Pinterest: Glexmann
+Google Plus: Glexmann
+Discord Server: Glexmann
+
+Location: Hong Kong
+
+/* THANKS */
+Visitors: All
+Subscribers: All
+Advertisers: ALL
+
+/* SITE */
+Last update: Daily
+Language: English
+OnLine since: 2018
+
+/* CONTACT */
+If you'd like to suport us and/or you'd like to leave a message, check out contacts at:
+http://www.DasDomains.Com/contactform.php
+
+# Copyright &copy; 2018-2021 MidasTouch.Com
